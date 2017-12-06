@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Beginning</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- Sans serif font -->
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,600,700|Encode+Sans:400,700|PT+Serif:400,400i,700,700i" rel="stylesheet">
+    <!-- Serif font -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i" rel="stylesheet">
+    
+    <link href="libs/css/bootstrap/bootstrap-grids.css" rel="stylesheet">
+
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+    
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Material icons font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <div id="main" class="container-fluid">
+      <div id="page" class="row">
+        <div id="pageHeader" class="col-md-4">
+          profile info zone
+        </div>
+
+        <div id="pageContent" class="col-md-offset-4 col-md-8">
+          <div class="row articles">          
+            <article class="row">
+              <header>
+                <h1 class="article-title">Elements</h1>
+                <h2 class="article-title-caption">
+                  Showcasing common visual elements, such as: headers, links,
+                  quotations, code excerpts, images etc.
+                </h2>
+                
+                <div class="article-meta-info">
+                  <author>Author Name</author>
+                  <time>30 Nov 2017</time>
+                </div>
+              </header>
+              <div class="article-content">
+                
+                <h1>Header h1</h1>
+                <h2>Header h2</h2>
+                <h3>Header h3</h3>
+
+                <hr>
+
+                <h1>Kinds of content styling</h1>
+
+                <h2>Typography, section dividers</h2>
+
+                <p>
+                  Text emphasis: <b>bold</b>, <i>italic</i>,
+                  <b><i>bold and italic</i></b> and <s>strikethrough</s>.
+                  We can also have <q>inline quotations</q>, which might be
+                  achieved by using a <code>&lt;q&gt;</code> element or explicit
+                  quotations marks, like "double quotes" and 'single quotes'.
+                </p>
+                <p>
+                  Explicit quotation marks might be converted to curling quotes
+                  <em>if</em> some preprocessing is applied to the post (not happening yet).
+                  <code>&lt;q&gt;</code> elements generate curling quotes by default
+                  through CSS rules.
+                </p>
+                <p>
+                  Section dividers are also supported. They look like this:
+                </p>
+                <hr>
+                <p>
+                  Then, we could start another section here...
+                </p>
+
+                <h2>HTML/Markdown common elements</h2>
+                
+                <h3>Links</h3>
+                <p>
+                  <a href="">This is a link</a>.
+                </p>
+
+                <h3>Code</h3>
+                
+                <p>
+                  Inline <code>code</code>, in a long long line, so it might
+                  break and we can see how it looks in a multi-line scenario.
+                </p>
+                
+                <p>
+                  Some code block examples. First, a raw text code:
+                </p>
+                
+<pre><code class="nohighlight">Sample text here...</code></pre>
+                
+                <p>
+                  Some more...
+                </p>
+                
+<pre><code class="nohighlight">// Some comments
+line 1 of code
+line 2 of code
+line 3 of code</code></pre>
+                
+                <p>
+                  A Javascript code (which may be highlighted):
+                </p>
+                
+<pre><code class="language-js">var foo = function (bar) {
+  return bar++;
+};
+
+console.log(foo(5));</code></pre>
+
+                <h3 id="Tables">Tables</h3>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Table Header 1</th>
+                      <th>Table Header 2</th>
+                      <th>Table Header 3</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Row 1</td>
+                      <td>Row 2</td>
+                      <td>Row 3</td>
+                    </tr>
+                    <tr>
+                      <td>Row 1</td>
+                      <td>Row 2</td>
+                      <td>Row 3</td>
+                    </tr>
+                    <tr>
+                      <td>Row 1</td>
+                      <td>Row 2</td>
+                      <td>Row 3</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <h3 id="Quotations">Quotations</h3>
+                <p>
+                  There are two kinds of quotations. The first one is the <q>inline
+                  quotation</q>. The other one is the blockquote:
+                </p>
+                <blockquote>
+                  <p>
+                    Vestibulum augue risus, pretium ut ante quis, vulputate commodo arcu.
+                    Morbi urna neque, sollicitudin id consequat nec, suscipit ac tortor.
+                    Nulla hendrerit eget felis sit amet hendrerit. Praesent mattis eget
+                    lectus vel commodo.
+                  </p>
+                  <p>&mdash; John Doe, on "The book of nothing".</p>
+                </blockquote>
+
+                <h3 id="Definition-List-dl">
+                  Definition List (dl)
+                </h3>
+                <dl>
+                  <dt>Definition List Title</dt>
+                  <dd>This is a definition list Row.</dd>
+                </dl>
+                
+                <h3 id="Ordered-List-ol">Ordered List (ol)</h3>
+                <ol>
+                  <li>List Item 1</li>
+                  <li>List Item 2</li>
+                  <li>List Item 3</li>
+                </ol>
+
+                <h3 id="Unordered-List-ul">Unordered List (ul)</h3>
+                <ul>
+                  <li>List Item 1</li>
+                  <li>List Item 2</li>
+                  <li>List Item 3</li>
+                </ul>
+
+                <h3 id="Misc-Stuff-abbr-acronym-sub-sup-etc">
+                  Misc Stuff - abbr, acronym, sub, sup, etc.
+                </h3>
+                <p>Lorem <sup>superscript</sup> dolor <sub>subscript</sub> amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. <cite>cite</cite>. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. <acronym title="National Basketball Association">NBA</acronym> Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.  <abbr title="Avenue">AVE</abbr></p>
+
+                <h2 id="Buttons">Buttons</h2>
+                <p>
+                  Buttons are just an extra feature. Not even sure if they're gonna be used any time.
+                </p>
+                <p>
+                  They are not meant for use on posts, but for things like interactive
+                  features or configuration panels that might happen in the future.
+                </p>
+                <p>
+                  To use a button, utilize an <code>&lt;a&gt;</code> or <code>&lt;button&gt;</code>
+                  element with the class <code>.button</code> along the specification
+                  of its type: <code>.button-default</code>,
+                  <code>.button-primary</code>, <code>.button-danger</code> or
+                  <code>.button-disabled</code>.  You can also use the classes 
+                  <code>.button-sm</code> (for small) and <code>.button-lg</code> (for large)
+                  to change the size of a button.
+                </p>
+                <p>
+                  Then, you will get something like these:
+                </p>
+                <a class="button button-sm button-default">Default</a>
+                <a class="button button-sm button-primary">Primary</a>
+                <a class="button button-sm button-danger">Danger</a>
+                <a class="button button-sm button-disabled">Disabled</a><br/>
+                <a class="button button-default">Default</a>
+                <a class="button button-primary">Primary</a>
+                <a class="button button-danger">Danger</a>
+                <a class="button button-disabled">Disabled</a><br/>
+                <a class="button button-lg button-default">Default</a>
+                <a class="button button-lg button-primary">Primary</a>
+                <a class="button button-lg button-danger">Danger</a>
+                <a class="button button-lg button-disabled">Disabled</a>
+              </div>
+
+              <footer>
+                <div class="article-categories">
+                  <i class="material-icons md-18">local_offer</i>
+                  <a class="category">Some</a>
+                  <a class="category">Sample</a>
+                  <a class="category">Article</a>
+                  <a class="category">Categories</a>
+                </div>
+              </footer>
+            </article>
+            
+            <article>
+              <header>
+                <h1 class="article-title">Article separator test</h1>
+                
+                <div class="article-meta-info">
+                  <author>Author Name</author>
+                  <time>30 Nov 2017</time>
+                </div>
+              </header>
+              <div class="article-content">
+                <p>
+                  Articles must be separated by a horizontal line. This one aims
+                  to test/show this, as it should be preceeded by such.
+                </p>
+              </div>
+              <footer>
+                <div class="article-categories">
+                  <i class="material-icons md-18">local_offer</i>
+                  <a class="category">Some</a>
+                  <a class="category">More</a>
+                  <a class="category">Article</a>
+                  <a class="category">Categories</a>
+                </div>
+              </footer>
+            </article>
+
+          </div>
+          <div id="pageFooter" class="row">
+            <div class="two-thirds column">
+                footer content
+            </div>
+          </div> <!-- footer -->
+        </div> <!-- page content -->
+      </div> <!-- blog content -->
+    </div> <!-- main -->
+    
+  </body>
+</html>
