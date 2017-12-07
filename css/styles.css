@@ -95,7 +95,7 @@ a:hover {
     margin-right: 0;
     margin-left: auto;
     padding: 0.4rem 0.5rem;
-    width: 40%;
+    width: 100%;
     border-right: 0.5rem solid #E0E0E0;
   }
   .article-meta-info author {
