@@ -89,21 +89,20 @@ a:hover {
     margin-top: 0.6rem;
   }
   .article-meta-info {
+    font-size: 0.7rem;
     color: #424242;
     text-align: right;
     margin-right: 0;
     margin-left: auto;
-    padding-top: 0.5rem;
-    width: 70%;
-    border-top: 1px solid #BDBDBD;
+    padding: 0.4rem 0.5rem;
+    width: 40%;
+    border-right: 0.5rem solid #E0E0E0;
   }
   .article-meta-info author {
+    display:block;
+    font-size: 0.85rem;
+    line-height: 1.2rem;
     font-weight: 700;
-  }
-  .article-meta-info author::after {
-    content: '●';
-    font-weight: normal;
-    padding: 0 0.4rem 0 0.6rem;
   }
   .article-content p,
   .article-content blockquote,
@@ -422,12 +421,6 @@ article footer
 /* Rules for using icons as white on a dark background. */
 .material-icons.md-light { color: rgba(255, 255, 255, 1); }
 .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
-
-@media screen and (min-width: 599px) {
-  .article-meta-info {
-    width: 50%;
-  }
-}
 
 @media screen and (min-width: 991px) {
   #pageHeader {
