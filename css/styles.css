@@ -45,8 +45,9 @@ a:hover {
 
 .articles {
   padding: 2rem 2%;
-  max-width: 50rem;
+  max-width: 55rem;
   margin: auto;
+  margin-top: 1rem;
   margin-bottom: 5rem;
 }
 
@@ -423,7 +424,7 @@ article footer
 .material-icons.md-light { color: rgba(255, 255, 255, 1); }
 .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 768px) {
   #pageHeader {
     position: fixed;
     height: 100%;
