@@ -36,8 +36,60 @@ a:hover {
 #pageHeader {
   position: static;
   background-color: #424242;
-  color: white;
   height: auto;
+  padding: 4rem 1rem 2rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+img#profilePicture {
+  display: block;
+  width: 100%;
+  max-width: 7.5rem;
+  height: auto;
+  margin: auto;
+  border-radius: 100%;
+}
+
+#pageHeader #pageTitle {
+  color: #FAFAFA;
+  font-size: 1.9rem;
+}
+
+#pageHeader #pageDescription {
+  color: #EEE;
+  max-width: 30rem;
+  margin: auto;
+  text-align: left;
+}
+
+#pageHeader #location {
+  color: #9E9E9E;
+}
+
+#pageHeader #location .fa {
+  margin-right: 0.3rem;
+}
+
+ul#socialMedia {
+  margin: 0;
+  padding: 1.2rem 0;
+  list-style-type: none;
+}
+
+ul#socialMedia li {
+  display: inline-block;
+  margin: auto;
+  padding: 0.5rem;
+  font-size: 1.7rem;
+}
+
+ul#socialMedia a {
+  color: #E0E0E0;
+}
+
+ul#socialMedia a:hover {
+  color: #FF6D00;
 }
 
 #pageContent {
@@ -402,7 +454,6 @@ a.button:hover {
 .button,
 .category,
 article footer
-/* .article-meta-info */
  {
   font-family: 'Encode Sans', apple-system, BlinkMacSystemFont, 'Segoe UI',
                 Roboto, Ubuntu, sans-serif;
@@ -412,6 +463,7 @@ article footer
   #pageHeader {
     position: fixed;
     height: 100%;
+    padding-top: 7rem;
   }
 
   .articles {
