@@ -126,9 +126,6 @@ ul#socialMedia a:hover {
 .articles article:last-of-type::after {
   all: unset;
 }
-  article header {
-    margin-bottom: 2rem;
-  }
   article header h1,
   .article-title {
     font-size: 2.5rem;
@@ -143,20 +140,13 @@ ul#socialMedia a:hover {
     margin-top: 0.6rem;
   }
   .article-meta-info {
-    font-size: 0.7rem;
-    color: #424242;
+    font-size: 1.1rem;
+    color: #616161;
     text-align: right;
     margin-right: 0;
     margin-left: auto;
-    padding: 0.4rem 0.5rem;
+    padding: 0.5rem 0;
     width: 100%;
-    border-right: 0.5rem solid #E0E0E0;
-  }
-  .article-meta-info author {
-    display:block;
-    font-size: 0.85rem;
-    line-height: 1.2rem;
-    font-weight: 700;
   }
   .article-content p,
   .article-content blockquote,
