@@ -1,3 +1,13 @@
+@-ms-viewport{
+  zoom: 1.0;
+  width: extend-to-zoom;
+}
+
+@viewport{
+  zoom: 1.0;
+  width: extend-to-zoom;
+}
+
 html {
   font-size: 14px;
 }
