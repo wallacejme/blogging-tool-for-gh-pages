@@ -9,6 +9,7 @@
   "private": false,
   "dependencies": {
     "highlight.js": "^9.12.0",
+    "jquery": "^3.3.1",
     "normalize-css": "^2.3.1"
   },
   "devDependencies": {
