@@ -345,6 +345,14 @@ table td {
   text-align: left;
 }
 
+/*
+ * Images and Galleries
+ */
+ img {
+  max-width: 100%;
+  display: block;
+  margin: 1rem auto;
+}
 
 #pageFooter {
   color: #616161;
