@@ -43,34 +43,29 @@ a:hover {
   text-decoration: underline;
 }
 
-/*
-#pageHeader {
-  position: static;
-  background-color: #212121;
-  height: auto;
-  padding: 1rem 0;
-  font-size: 1rem;
-}
-*/
-
-
 .container {
-  width: 80%;
-  margin: 0 auto;
-  clear: both;
+  width: 98%;
+  margin: auto;
+}
+
+nav ul.navbar-menu {
+  display: none;
+}
+
+nav button.navbar-menu-icon {
+  display: block;
 }
 
 nav a {
   display: inline-block;
-  color: #333;
+  color: #212121;
   text-decoration: none;
 }
-
 nav {
   background: #fff;
   height: 56px;
   line-height: 56px;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
   left: 0;
@@ -81,21 +76,6 @@ nav {
 nav.scrollUp {
   transform: translateY(-80px);
 }
-nav ul.navbar-menu {
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-  float: right;
-}
-nav ul.navbar-menu li {
-  display: inline-block;
-  margin: 0 10px;
-}
-nav ul.navbar-menu li a {
-  color: #666;
-  font-size: 14px;
-  text-transform: uppercase;
-}
 nav a#brand {
   float: left;
   font-weight: 800;
@@ -104,42 +84,21 @@ nav a#brand {
 nav a#brand img {
   max-height: 30px;
 }
-nav button {
+nav button.navbar-menu-icon {
   background: none;
   width: 30px;
   height: 24px;
   margin-top: 16px;
   border: none;
   cursor: pointer;
-  display: none;
   float: right;
 }
-nav button span {
+nav button.navbar-menu-icon span {
   width: 24px;
   height: 2px;
-  background: #333;
+  background: #212121;
   display: block;
   margin: 5px 0;
-}
-
-@media (max-width: 768px) {
-  .container {
-    width: 92%;
-  }
-
-  nav ul.navbar-menu {
-    display: none;
-  }
-
-  nav button {
-    display: block;
-  }
-}
-
-@media (max-width: 400px) {
-  .container {
-    width: 98%;
-  }
 }
 
 img#profilePicture {
@@ -558,18 +517,42 @@ article footer
                 Roboto, Ubuntu, sans-serif;
 }
 
+@media (min-width: 400px) {
+  .container {
+    width: 95%;
+  }
+}
+
 @media screen and (min-width: 768px) {
 
   html {
     font-size: 16px;
   }
-/*
-  #pageHeader {
-    position: fixed;
-    height: 100%;
-    padding-top: 7rem;
+
+  nav .container {
+    width: 80%;
+    margin: 0 auto;
+    clear: both;
   }
-*/
+  nav ul.navbar-menu {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    float: right;
+  }
+  nav ul.navbar-menu li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  nav ul.navbar-menu li a {
+    color: #212121;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  nav button.navbar-menu-icon {
+    display: none;
+  }
+  
   .articles {
     padding: 2rem 5%;
   }
