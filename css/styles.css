@@ -469,8 +469,9 @@ a.button:hover {
   text-align: center;
 }
 
-.article-categories .fa {
-  padding: 0.45rem;
+.article-categories i {
+  vertical-align: middle;
+  margin-right: 0.2rem;
 }
 
 .button,
