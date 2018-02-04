@@ -42,19 +42,6 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
-.container {
-  width: 95%;
-  margin: auto;
-}
-
-nav ul.navbar-menu {
-  display: none;
-}
-
-nav button.navbar-menu-icon {
-  display: block;
-}
 nav {
   background: #212121;
   height: 56px;
@@ -68,6 +55,29 @@ nav {
   width: 100%;
   z-index: 9998;
   transition: all 0.15s;
+}
+nav .container {
+  width: 95%;
+  margin: auto;
+}
+nav ul.navbar-menu {
+  margin: 0;
+  padding: 0;
+  display: none;
+  list-style-type: none;
+}
+nav ul.navbar-menu li a {
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 400;
+}
+nav ul.navbar-menu li a:hover {
+  color: #bdbdbd;
+}
+nav button.navbar-menu-icon {
+  display: block;
 }
 nav.scrollUp {
   transform: translateY(-80px);
@@ -88,6 +98,21 @@ nav button.navbar-menu-icon {
 }
 nav button.navbar-menu-icon i {
   line-height: 56px;
+}
+
+nav.expanded {
+  height: auto;
+}
+nav.expanded .container {
+  clear: right;
+}
+nav.expanded ul.navbar-menu {
+  display: block;
+}
+nav.expanded ul.navbar-menu,
+nav.expanded ul.navbar-menu li {
+  clear: both;
+  float: left;
 }
 
 #pageContent {
@@ -477,15 +502,7 @@ article footer
     display: inline-block;
   }
   nav ul.navbar-menu li a {
-    color: #fff;
-    font-size: 14px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 400;
     padding: 0 10px;
-  }
-  nav ul.navbar-menu li a:hover {
-    color: #bdbdbd;
   }
   nav button.navbar-menu-icon {
     display: none;

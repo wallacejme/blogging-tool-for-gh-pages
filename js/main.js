@@ -20,5 +20,17 @@ $(document).ready(function () {
     
     c = currentScrollTop;
   });
+
+  $('button#navbarMenuIcon').click(function(element, a1, a2, a3) {    
+    $('nav').toggleClass('expanded');
+
+    const menuIcon = $(this).children('i').first();
+    if(menuIcon.text() == 'menu'){
+      menuIcon.text('close');
+    }
+    else {
+      menuIcon.text('menu');
+    }
+  });
   
 });
