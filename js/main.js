@@ -27,8 +27,12 @@ $(document).ready(function () {
     const menuIcon = $(this).children('i').first();
     if(menuIcon.text() == 'menu'){
       menuIcon.text('close');
+      menuIcon.removeClass('shrinking-menu');
+      menuIcon.addClass('expanding-menu');
     }
     else {
+      menuIcon.removeClass('expanding-menu');
+      menuIcon.addClass('shrinking-menu');
       menuIcon.text('menu');
     }
   });

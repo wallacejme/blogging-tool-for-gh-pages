@@ -97,7 +97,14 @@ nav button.navbar-menu-icon {
   float: right;
 }
 nav button.navbar-menu-icon i {
+  transition: 0.3s;
   line-height: 56px;
+}
+nav button.navbar-menu-icon i.expanding-menu {
+  transform: rotate(90deg);
+}
+nav button.navbar-menu-icon i.shrinking-menu {
+  transform: rotate(-180deg);
 }
 
 nav.expanded {
