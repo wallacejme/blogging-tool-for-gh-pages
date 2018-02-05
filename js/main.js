@@ -36,5 +36,9 @@ $(document).ready(function () {
       menuIcon.text('menu');
     }
   });
+
+  $( 'a, button' ).click(function () {
+    $(this).blur();
+  })
   
 });

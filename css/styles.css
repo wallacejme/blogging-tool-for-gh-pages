@@ -42,6 +42,7 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
 nav {
   background: #212121;
   height: 56px;
@@ -95,6 +96,14 @@ nav button.navbar-menu-icon {
   cursor: pointer;
   color: #fff;
   float: right;
+}
+nav button.navbar-menu-icon,
+nav ul.navbar-menu a {
+  outline: none;
+}
+nav button.navbar-menu-icon:focus,
+nav ul.navbar-menu a:focus {
+  color: #616161;
 }
 nav button.navbar-menu-icon i {
   transition: 0.3s;
