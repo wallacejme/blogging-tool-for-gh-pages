@@ -27,12 +27,10 @@ $(document).ready(function () {
     const menuIcon = $(this).children('i').first();
     if(menuIcon.text() == 'menu'){
       menuIcon.text('close');
-      menuIcon.removeClass('shrinking-menu');
-      menuIcon.addClass('expanding-menu');
+      menuIcon.addClass('rotate--clockwise--90deg');
     }
     else {
-      menuIcon.removeClass('expanding-menu');
-      menuIcon.addClass('shrinking-menu');
+      menuIcon.removeClass('rotate--clockwise--90deg');
       menuIcon.text('menu');
     }
   });

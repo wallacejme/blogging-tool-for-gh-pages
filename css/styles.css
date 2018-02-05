@@ -109,12 +109,6 @@ nav button.navbar-menu-icon i {
   transition: 0.3s;
   line-height: 56px;
 }
-nav button.navbar-menu-icon i.expanding-menu {
-  transform: rotate(90deg);
-}
-nav button.navbar-menu-icon i.shrinking-menu {
-  transform: rotate(-180deg);
-}
 
 nav.expanded {
   height: auto;
@@ -503,6 +497,17 @@ article footer
  {
   font-family: 'Encode Sans', apple-system, BlinkMacSystemFont, 'Segoe UI',
                 Roboto, Ubuntu, sans-serif;
+}
+
+/* SOME USEFUL RULES */
+
+/* Animate rotations */
+.rotate--clockwise--90deg {
+  -webkit-transform: rotate(90deg); /* Safari */
+  -moz-transform: rotate(90deg); /* Firefox */
+  -ms-transform: rotate(90deg); /* IE */
+  -o-transform: rotate(90deg); /* Opera */
+  transform: rotate(90deg);
 }
 
 @media screen and (min-width: 768px) {
