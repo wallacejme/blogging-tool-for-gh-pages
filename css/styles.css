@@ -548,7 +548,7 @@ article footer
   nav ul.navbar-menu li a {
     padding: 0 10px;
   }
-  nav button.navbar-menu-icon {
+  nav:not(.expanded) button.navbar-menu-icon {
     display: none;
   }
   
