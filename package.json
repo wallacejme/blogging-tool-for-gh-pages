@@ -1,9 +1,9 @@
 {
-  "name": "blogging-tool-for-gh-pages",
+  "name": "bloghr",
   "version": "1.0.0",
   "description": "A GitHub Pages ready blogging tool.",
   "main": "index.js",
-  "repository": "https://github.com/wallacejme/blogging-tool-for-gh-pages.git",
+  "repository": "https://github.com/wallacejme/bloghr.git",
   "author": "Wallace Medeiros <wallacejme@gmail.com>",
   "license": "MIT",
   "private": false,
