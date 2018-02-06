@@ -32,7 +32,7 @@ h6 {
 a,
 a:hover,
 a:link {
-  color: #FF6D00;
+  color: #FF3D00;
 }
 
 a {
@@ -433,11 +433,11 @@ a.button:hover {
 }
 
 .button-primary {
-  color: #FF6D00 !important;  /* A700 */
-  border-color: #FFCC80;      /* 200 */
+  color: #FF3D00 !important;  /* A700 */
+  border-color: #FFAB91;      /* 200 */
 }
 .button-primary:hover {
-  border-color: #FF6D00;
+  border-color: #FF3D00;
 }
 
 .button-danger:hover {
