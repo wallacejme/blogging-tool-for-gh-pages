@@ -393,6 +393,11 @@ table td {
   text-align: center;
 }
 
+#pageFooter p {
+  margin: 0;
+  line-height: 170%;
+}
+
 .button {
   display: inline-block;
   cursor: pointer;
