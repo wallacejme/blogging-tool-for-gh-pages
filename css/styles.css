@@ -43,11 +43,6 @@ a:hover {
   border-bottom-width: 1px;
 }
 
-a:visited {
-  color: #FF9E80 /* A100 */;
-  border-color: #FF9E80 /* A100 */;
-}
-
 a:active {
   color: #BF360C /* 900 */;
   border-color: #BF360C /* 900 */;
