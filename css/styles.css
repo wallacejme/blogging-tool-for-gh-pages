@@ -294,6 +294,10 @@ blockquote p:first-child {
 blockquote p:last-child {
   margin-bottom: 0 !important;
 }
+blockquote a {
+  color: #424242;
+  border-color: #424242;
+}
 
 code {
   font-family: 'SFMono-Regular', Monaco, Consolas, 'Liberation Mono', Menlo,
