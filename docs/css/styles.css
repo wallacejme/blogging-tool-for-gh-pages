@@ -30,17 +30,22 @@ h6 {
 }
 
 a,
-a:hover,
 a:link {
-  color: #FF6D00;
-}
-
-a {
+  color: #FF3D00 /* A400 */;
+  font-weight: bold;
   text-decoration: none;
+  border-bottom-style: solid;
+  border-bottom-color: #FF3D00 /* A400 */;
+  border-bottom-width: 0;
 }
 
 a:hover {
-  text-decoration: underline;
+  border-bottom-width: 1px;
+}
+
+a:active {
+  color: #BF360C /* 900 */;
+  border-color: #BF360C /* 900 */;
 }
 
 nav {
@@ -68,6 +73,8 @@ nav ul.navbar-menu {
   list-style-type: none;
 }
 nav ul.navbar-menu li a {
+  all: unset;
+  cursor: pointer;
   color: #fff;
   font-size: 14px;
   text-transform: uppercase;
@@ -89,6 +96,7 @@ nav a#brand {
   font-size: 20px;
   color: #fff;
   text-decoration: none;
+  border: none !important;
 }
 nav button.navbar-menu-icon {
   background: none;
@@ -200,21 +208,30 @@ nav.expanded ul.navbar-menu li {
     margin-bottom: 1.50rem;
     line-height: 1.90rem;
   }
+  .article-content h1,
+  .article-content h2,
+  .article-content h3,
+  .article-content h4,
+  .article-content h5,
+  .article-content h6 {
+    margin: 1.75rem 0 1.5rem;
+  }
   .article-content h1 {
-    font-size: 1.7rem;
+    font-size: 1.65rem;
     font-weight: 700;
+    margin-top: 2.0rem;
   }
   .article-content h2 {
-    font-size: 1.45rem;
+    font-size: 1.4rem;
     font-weight: 700;
   }
   .article-content h3 {
-    font-size: 1.35rem;
+    font-size: 1.30rem;
     font-weight: 600;
     color: #757575;
   }
   .article-content h4 {
-    font-size: 1.20rem;
+    font-size: 1.19rem;
   }
   .article-content h5 {
     font-size: 1.10rem;
@@ -285,6 +302,10 @@ blockquote p:first-child {
 }
 blockquote p:last-child {
   margin-bottom: 0 !important;
+}
+blockquote a {
+  color: #424242;
+  border-color: #424242;
 }
 
 code {
@@ -393,6 +414,11 @@ table td {
   text-align: center;
 }
 
+#pageFooter p {
+  margin: 0;
+  line-height: 170%;
+}
+
 .button {
   display: inline-block;
   cursor: pointer;
@@ -428,11 +454,11 @@ a.button:hover {
 }
 
 .button-primary {
-  color: #FF6D00 !important;  /* A700 */
-  border-color: #FFCC80;      /* 200 */
+  color: #FF3D00 !important;  /* A700 */
+  border-color: #FFAB91;      /* 200 */
 }
 .button-primary:hover {
-  border-color: #FF6D00;
+  border-color: #FF3D00;
 }
 
 .button-danger:hover {
@@ -452,6 +478,7 @@ a.button:hover {
   font-size: 0.9rem;
   text-decoration: none;
   font-weight: 400;
+  border: none;
   border-radius: 0.25rem;
   line-height: 2.1rem;
   padding: 0 0.75rem;
