@@ -5,36 +5,48 @@ const runSequence = require('run-sequence');
 const es = require('event-stream');
 
 gulp.task('clean', () => {
-  return gulp.src(['libs/', 'docs/'], { read: false })
+  return gulp.src(['build/', 'docs/'], { read: false })
     .pipe(clean());
+});
+
+gulp.task('organizeCustomStyle', () => {
+  return gulp.src('css/**/*.css')
+    .pipe(concat('style.css'))
+    .pipe(gulp.dest('build/css/'));
+});
+
+gulp.task('organizeCustomScripts', () => {
+  return gulp.src('js/**/*.js')
+    .pipe(concat('script.js'))
+    .pipe(gulp.dest('build/js/'));
 });
 
 gulp.task('organizeCSSLibs', () => {
   return gulp.src('node_modules/normalize-css/normalize.css')
-    .pipe(gulp.dest('libs/css'));
+    .pipe(concat('modules.css'))
+    .pipe(gulp.dest('build/libs/css'));
 });
 
 gulp.task('organizeJSLibs', () => {
   return gulp.src('node_modules/jquery/dist/jquery.js')
-    .pipe(gulp.dest('libs/js'));
+    .pipe(concat('modules.js'))
+    .pipe(gulp.dest('build/libs/js'));
 })
 
-gulp.task('organizeLibs', ['organizeCSSLibs', 'organizeJSLibs']);
+gulp.task('organizeCSS', ['organizeCustomStyle', 'organizeCSSLibs']);
+gulp.task('organizeScripts', ['organizeCustomScripts', 'organizeJSLibs']);
+
+gulp.task('build', ['organizeCSS', 'organizeScripts']);
 
 gulp.task('publish', () => {
   return es.merge([
-      gulp.src([
-        'index.html',
-        'img/**/*',
-        'css/**/*.css',
-        'js/**/*.js',
-        'libs/**/*',
-      ], { base: './' } )
+      gulp.src(['index.html', 'img/**/*'], { base: '.' }),
+      gulp.src('build/**/*.css', { base: '.' }),
+      gulp.src('build/**/*.js', { base: '.' })
     ])
     .pipe(gulp.dest('docs/'));
 });
 
-
 gulp.task('default', () => {
-	return runSequence('clean', 'organizeLibs', 'publish');
+  return runSequence('clean', 'build', 'publish');
 });

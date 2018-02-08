@@ -59,5 +59,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# gulp-generated build/ directory (not relevant to repository)
+build/
+
 # don't ignore contents of docs/ directory
 !docs/*
