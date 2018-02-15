@@ -31,21 +31,22 @@ h6 {
 
 a,
 a:link {
-  color: #FF3D00 /* A400 */;
-  font-weight: bold;
+  color: #424242 /* 800 */;
   text-decoration: none;
   border-bottom-style: solid;
-  border-bottom-color: #FF3D00 /* A400 */;
-  border-bottom-width: 0;
+  border-bottom-color: #FF9E80 /* A100 */;
+  border-bottom-width: 2px;
 }
 
-a:hover {
-  border-bottom-width: 1px;
+a:hover,
+a:focus {
+  color: #DD2C00 /* A700 */;
+  border-color: #FF6E40 /* A200 */;
 }
 
 a:active {
-  color: #BF360C /* 900 */;
-  border-color: #BF360C /* 900 */;
+  color: #BF360C /* 900 */ !important;
+  border-color: #BF360C /* 900 */ !important;
 }
 
 nav {
@@ -304,8 +305,12 @@ blockquote p:last-child {
   margin-bottom: 0 !important;
 }
 blockquote a {
-  color: #424242;
-  border-color: #424242;
+  border-color: #bdbdbd /* 400 */;
+}
+blockquote a:hover,
+blockquote a:focus {
+  color: #212121 /* 900 */;
+  border-color: #616161 /* 700 */;
 }
 
 code {
