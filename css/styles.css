@@ -76,6 +76,9 @@ nav ul.navbar-menu {
   list-style-type: none;
   transition: visibility 0s, opacity 0.15s linear;
 }
+nav:not(.expanded) ul.navbar-menu {
+  height: 0;
+}
 nav ul.navbar-menu li a {
   all: unset;
   cursor: pointer;

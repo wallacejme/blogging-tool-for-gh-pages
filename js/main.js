@@ -42,6 +42,17 @@ $(document).ready(function () {
   });
 
   /*
+   * Collapse navbar if other page elements are clicked.
+   */
+  $(':not(html, body, #pageHeader, #pageHeader *)').click(function() {
+    console.log($(this));
+    $('nav').removeClass('expanded');
+    const menuIcon = $('button#navbarMenuIcon').children('i').first();
+    menuIcon.removeClass('rotate--clockwise--90deg');
+    menuIcon.text('menu');
+  });
+
+  /*
    * Automatically remove focus after clicking on buttons & links.
    */
   $( 'a, button' ).click(function () {
