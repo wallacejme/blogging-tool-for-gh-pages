@@ -2,6 +2,9 @@ $(document).ready(function () {
   
   'use strict';
 
+  /*
+   * Detects page scrolling & show/hide navbar accordingly.
+   */
   var c, 
       currentScrollTop = 0,
       navbar = $('nav');
@@ -21,7 +24,10 @@ $(document).ready(function () {
     c = currentScrollTop;
   });
 
-  $('button#navbarMenuIcon').click(function(element, a1, a2, a3) {    
+  /*
+   * Expand/collapse navbar through interation with menu icon.
+   */
+  $('button#navbarMenuIcon').click(function() {    
     $('nav').toggleClass('expanded');
 
     const menuIcon = $(this).children('i').first();
@@ -35,8 +41,11 @@ $(document).ready(function () {
     }
   });
 
+  /*
+   * Automatically remove focus after clicking on buttons & links.
+   */
   $( 'a, button' ).click(function () {
     $(this).blur();
-  })
-  
+  });
+
 });
