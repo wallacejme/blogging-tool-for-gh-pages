@@ -47,6 +47,11 @@ gulp.task('publish', () => {
     .pipe(gulp.dest('docs/'));
 });
 
+var watcher = gulp.watch(['index.html', 'js/**/*.js', 'css/**/*.css'], ['build']);
+watcher.on('change', function(event) {
+  console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
+});
+
 gulp.task('default', () => {
   return runSequence('clean', 'build', 'publish');
 });
