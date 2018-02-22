@@ -101,7 +101,7 @@ nav a#brand {
   float: left;
   font-weight: 800;
   font-size: 20px;
-  color: #fff;
+  color: #fff !important;
   text-decoration: none;
   border: none !important;
 }
@@ -109,16 +109,17 @@ nav button.navbar-menu-icon {
   background: none;
   border: none;
   cursor: pointer;
-  color: #fff;
+  color: #fff !important;
   float: right;
 }
 nav button.navbar-menu-icon,
 nav ul.navbar-menu a {
   outline: none;
 }
+nav a#brand:focus,
 nav button.navbar-menu-icon:focus,
 nav ul.navbar-menu a:focus {
-  color: #616161;
+  color: #616161 !important;
 }
 nav button.navbar-menu-icon i {
   transition: 0.3s;
