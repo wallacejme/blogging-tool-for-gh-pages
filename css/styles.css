@@ -485,6 +485,12 @@ a.button:hover {
   font-size: 0.9rem;
   text-decoration: none;
   font-weight: 400;
+  color: #616161 !important; /* Gray 800 */
+  background-color: #EEE; /* Gray 200 */
+  margin: 0.3rem;
+  margin-left: 0;
+  vertical-align: middle;
+  text-align: center;
   border: none;
   border-radius: 0.25rem;
   line-height: 2.1rem;
@@ -498,13 +504,8 @@ a.button:hover {
   text-decoration: none;
 }
 
-.category {
-  color: #616161 !important; /* Gray 800 */
-  background-color: #EEE; /* Gray 200 */
-  margin: 0.3rem;
-  margin-left: 0;
-  vertical-align: middle;
-  text-align: center;
+.category:active {
+  color: #424242 !important;
 }
 
 .article-categories i {
