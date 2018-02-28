@@ -144,7 +144,7 @@ nav.expanded ul.navbar-menu li {
 }
 
 #pageContent {
-  padding: 0;
+  padding: 0 0.5rem;
   padding-top: 56px;
   max-width: 42rem;
   margin: 2rem auto 7rem;
@@ -152,7 +152,7 @@ nav.expanded ul.navbar-menu li {
 
 .articles article {
   padding: 0rem 0.75rem 2rem;
-  margin: 0 0.35rem;
+  margin: 0;
   border: 1px solid transparent;
   border-radius: 0.25em;
 }
