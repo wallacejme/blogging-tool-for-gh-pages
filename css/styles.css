@@ -144,19 +144,15 @@ nav.expanded ul.navbar-menu li {
 }
 
 #pageContent {
-}
-
-.articles {
-  padding: 2rem 2%;
+  padding: 0;
+  padding-top: 56px;
   max-width: 42rem;
-  margin: auto;
-  margin-top: 4rem;
-  margin-bottom: 5rem;
+  margin: 2rem auto 7rem;
 }
 
 .articles article {
   padding: 0rem 0.75rem 2rem;
-  margin: 0 0.2rem;
+  margin: 0 0.35rem;
   border: 1px solid transparent;
   border-radius: 0.25em;
 }
@@ -591,19 +587,11 @@ article footer
     display: none;
   }
   
-  .articles {
-    padding: 2rem 5%;
-    margin-top: 5rem;
+  #pageContent {
+    margin-top: 4.5rem;
   }
 
   .articles article {
     padding: 0.5rem 1.5rem 2.5rem;
-  }
-}
-
-@media screen and (min-width: 1367px) {
-  .articles {
-    padding: 2rem 15%;
-    max-width: 65rem;
   }
 }
