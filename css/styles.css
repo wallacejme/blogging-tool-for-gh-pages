@@ -150,6 +150,13 @@ nav.expanded ul.navbar-menu li {
   margin: 2rem auto 7rem;
 }
 
+.page-title {
+  font-size: 2.7rem;
+  font-weight: normal;
+  line-height: 1.25em;
+  margin: 0.5em 0 1em;
+}
+
 .articles article {
   padding: 0rem 0.75rem 2rem;
   margin: 0;
@@ -525,6 +532,7 @@ a.button:hover {
 }
 
 #pageHeader,
+.page-title,
 #pageFooter,
 .button,
 .category,
