@@ -45,11 +45,21 @@ $(document).ready(function () {
    * Collapse navbar if other page elements are clicked.
    */
   $(':not(html, body, #pageHeader, #pageHeader *)').click(function() {
-    console.log($(this));
     $('nav').removeClass('expanded');
     const menuIcon = $('button#navbarMenuIcon').children('i').first();
     menuIcon.removeClass('rotate--clockwise--90deg');
     menuIcon.text('menu');
+  });
+
+  /*
+   * Post routing mechanism.
+   */
+  $( '.articles.global-listing article' ).click(function () {
+    const articleId = $(this).attr('article-id');
+    
+    if (articleId) {
+      window.location.href = 'posts/' + articleId + '.html';
+    }
   });
 
   /*

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Beginning</title>
+    <title>Bloghr Demo</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
@@ -9,14 +9,16 @@
     <script defer src="build/libs/js/modules.js"></script>
 
     <!-- Sans serif font -->
-    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,600,700|Encode+Sans:400,700" rel="stylesheet">
-    <!-- Serif font -->
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Sans:400,700" rel="stylesheet">
+    <!-- Serif font - not necessary on home (keeping it because this is a transitory state) -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i" rel="stylesheet"> -->
     
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+    <!-- NOT NECESSARY ON HOME (keeping it because this is a transitory state)
+      <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+      <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+    -->
     <!-- Material Icons font -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -29,8 +31,8 @@
     <header id="pageHeader">
       <nav>
         <div class="container">
-          <a href="#" id="brand">
-            Blog Title
+          <a href="" id="brand">
+            Bloghr Demo
           </a>
           
           <button id="navbarMenuIcon" class="navbar-menu-icon">
@@ -38,10 +40,10 @@
           </button>
           
           <ul class="navbar-menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Archive</a></li>
-            <li><a href="#">Categories</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="pages/archive.html">Archive</a></li>
+            <li><a href="pages/categories.html">Categories</a></li>
+            <li><a href="pages/about.html">About</a></li>
           </ul>
         </div>
       </nav>
@@ -49,8 +51,8 @@
       
 
     <main id="pageContent" class="main-content">
-      <div class="articles">          
-        <article class="">
+      <div class="global-listing articles">
+        <article article-id="elements" class="reduced-article">
           <header>
             <h1 class="article-title">Elements</h1>
             <h2 class="article-title-caption">
@@ -59,198 +61,56 @@
             </h2>
             
             <div class="article-meta-info">
-              Published on <time>Nov 30, 2017</time>
+              Published on <time>Dec 22, 2017</time>
             </div>
           </header>
-          <div class="article-content">
+        </article>
+
+        <article article-id="post-with-no-description" class="reduced-article">
+          <header>
+            <h1 class="article-title">Post With No Description</h1>
             
-            <h1>Header h1</h1>
-            <h2>Header h2</h2>
-            <h3>Header h3</h3>
-
-            <hr>
-
-            <h1>Kinds of content styling</h1>
-
-            <h2>Typography, section dividers</h2>
-
-            <p>
-              Text emphasis: <b>bold</b>, <i>italic</i>,
-              <b><i>bold and italic</i></b> and <s>strikethrough</s>.
-              We can also have <q>inline quotations</q>, which might be
-              achieved by using a <code>&lt;q&gt;</code> element or explicit
-              quotations marks, like "double quotes" and 'single quotes'.
-            </p>
-            <p>
-              Explicit quotation marks might be converted to curling quotes
-              <em>if</em> some preprocessing is applied to the post (not happening yet).
-              <code>&lt;q&gt;</code> elements generate curling quotes by default
-              through CSS rules.
-            </p>
-            <p>
-              Section dividers are also supported. They look like this:
-            </p>
-            <hr>
-            <p>
-              Then, we could start another section here...
-            </p>
-
-            <h2>HTML/Markdown common elements</h2>
-            
-            <h3>Links</h3>
-            <p>
-              <a href="">This is a link</a>.
-            </p>
-
-            <h3>Code</h3>
-            
-            <p>
-              Inline <code>code</code>, in a long long line, so it might
-              break and we can see how it looks in a multi-line scenario.
-            </p>
-            
-            <p>
-              Some code block examples. First, a raw text code:
-            </p>
-            
-            <pre><code class="nohighlight">Sample text here...</code></pre>
-                            
-                            <p>
-                              Some more...
-                            </p>
-                            
-            <pre><code class="nohighlight">// Some comments
-            line 1 of code
-            line 2 of code
-            line 3 of code</code></pre>
-            
-            <p>
-              A Javascript code (which may be highlighted):
-            </p>
-            
-            <pre><code class="language-js">var foo = function (bar) {
-              return bar++;
-            };
-
-            console.log(foo(5));</code></pre>
-
-            <h3 id="Images">Images</h3>
-            <img src="img/sample-images/1920x1080.jpg">
-            <img src="img/sample-images/600x800.jpg">
-            <img src="img/sample-images/700x700.jpg">
-
-            <h3 id="Tables">Tables</h3>
-            <table>
-              <thead>
-                <tr>
-                  <th>Table Header 1</th>
-                  <th>Table Header 2</th>
-                  <th>Table Header 3</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Row 1</td>
-                  <td>Row 2</td>
-                  <td>Row 3</td>
-                </tr>
-                <tr>
-                  <td>Row 1</td>
-                  <td>Row 2</td>
-                  <td>Row 3</td>
-                </tr>
-                <tr>
-                  <td>Row 1</td>
-                  <td>Row 2</td>
-                  <td>Row 3</td>
-                </tr>
-              </tbody>
-            </table>
-
-            <h3 id="Quotations">Quotations</h3>
-            <p>
-              There are two kinds of quotations. The first one is the <q>inline
-              quotation</q>. The other one is the blockquote:
-            </p>
-            <blockquote>
-              <p>
-                Vestibulum augue risus, pretium ut ante quis, vulputate commodo arcu.
-                Morbi urna neque, sollicitudin id consequat nec, suscipit ac tortor.
-                Nulla hendrerit eget felis sit amet hendrerit. Praesent mattis eget
-                lectus vel commodo.
-              </p>
-              <p>&mdash; John Doe, on “<a href="">The Book of Nothing</a>”.</p>
-            </blockquote>
-
-            <h3 id="Definition-List-dl">
-              Definition List (dl)
-            </h3>
-            <dl>
-              <dt>Definition List Title</dt>
-              <dd>This is a definition list Row.</dd>
-            </dl>
-            
-            <h3 id="Ordered-List-ol">Ordered List (ol)</h3>
-            <ol>
-              <li>List Item 1</li>
-              <li>List Item 2</li>
-              <li>List Item 3</li>
-            </ol>
-
-            <h3 id="Unordered-List-ul">Unordered List (ul)</h3>
-            <ul>
-              <li>List Item 1</li>
-              <li>List Item 2</li>
-              <li>List Item 3</li>
-            </ul>
-
-            <h3 id="Misc-Stuff-abbr-acronym-sub-sup-etc">
-              Misc Stuff - abbr, acronym, sub, sup, etc.
-            </h3>
-            <p>Lorem <sup>superscript</sup> dolor <sub>subscript</sub> amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. <cite>cite</cite>. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. <acronym title="National Basketball Association">NBA</acronym> Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.  <abbr title="Avenue">AVE</abbr></p>
-
-          <footer>
-            <div class="article-categories">
-              <i class="material-icons md-18">local_offer</i>
-              <a class="category">Some</a>
-              <a class="category">Sample</a>
-              <a class="category">Article</a>
-              <a class="category">Categories</a>
+            <div class="article-meta-info">
+              Published on <time>Dec 7, 2017</time>
             </div>
-          </footer>
+          </header>
+        </article>
+
+        <article article-id="too-long-title" class="reduced-article">
+          <header>
+            <h1 class="article-title">
+              This Article Has a Title That Is Way Too Long To Fit In a
+              Single Line. How Would That Look?
+            </h1>
+            <h2 class="article-title-caption">
+              Well, there is a chance the title is self-explanatory.
+            </h2>
+            
+            <div class="article-meta-info">
+              Published on <time>Dec 2, 2017</time>
+            </div>
+          </header>
         </article>
         
-        <article class="">
+        <article article-id="article-separator-test" class="reduced-article">
           <header>
-            <h1 class="article-title">Article separator test</h1>
-            
+            <h1 class="article-title">Article Separator Test</h1>
+            <h2 class="article-title-caption">
+              A sample post to test if it's alright with article dividers.
+            </h2>
+
             <div class="article-meta-info">
               Published on <time>Nov 30, 2017</time>
             </div>
           </header>
-          <div class="article-content">
-            <p>
-              Articles must be separated by a horizontal line. This one aims
-              to test/show this, as it should be preceeded by such.
-            </p>
-          </div>
-          <footer>
-            <div class="article-categories">
-              <i class="material-icons md-18">local_offer</i>
-              <a class="category">Some</a>
-              <a class="category">More</a>
-              <a class="category">Article</a>
-              <a class="category">Categories</a>
-            </div>
-          </footer>
         </article>
 
       </div>
-      <footer id="pageFooter">
-        <p>&copy; 2018 Author Name. All rights reserved.</p>
-        <p><small>Powered by <a href="https://github.com/wallacejme/bloghr">bloghr</a>.</small></p>
-      </footer> <!-- footer -->
     </main> <!-- page content -->
+    <footer id="pageFooter">
+      <p>&copy; 2018 Author Name. All rights reserved.</p>
+      <p><small>Powered by <a href="https://github.com/wallacejme/bloghr">bloghr</a>.</small></p>
+    </footer> <!-- footer -->
 
   </body>
 </html>
