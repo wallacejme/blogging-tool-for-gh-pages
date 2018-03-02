@@ -52,6 +52,17 @@ $(document).ready(function () {
   });
 
   /*
+   * Post routing mechanism.
+   */
+  $( '.articles.global-listing article' ).click(function () {
+    const articleId = $(this).attr('article-id');
+    
+    if (articleId) {
+      window.location.href = 'posts/' + articleId + '.html';
+    }
+  });
+
+  /*
    * Automatically remove focus after clicking on buttons & links.
    */
   $( 'a, button' ).click(function () {
