@@ -40,7 +40,7 @@ gulp.task('build', ['organizeCSS', 'organizeScripts']);
 
 gulp.task('publish', () => {
   return es.merge([
-      gulp.src(['index.html', 'img/**/*'], { base: '.' }),
+      gulp.src(['index.html', 'pages/**/*', 'img/**/*'], { base: '.' }),
       gulp.src('build/**/*.css', { base: '.' }),
       gulp.src('build/**/*.js', { base: '.' })
     ])
