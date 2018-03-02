@@ -494,14 +494,14 @@ a.button:hover {
   font-weight: 400;
   color: #616161 !important; /* Gray 800 */
   background-color: #EEE; /* Gray 200 */
-  margin: 0.3rem;
+  margin: 0.35em;
   margin-left: 0;
   vertical-align: middle;
   text-align: center;
   border: none;
-  border-radius: 0.25rem;
-  line-height: 2.1rem;
-  padding: 0 0.75rem;
+  border-radius: 0.30em;
+  line-height: 2.3em;
+  padding: 0 0.85em;
   -webkit-transition-duration: 0.25s; /* Safari */
   transition-duration: 0.25s;
 }
@@ -513,6 +513,10 @@ a.button:hover {
 
 .category:active {
   color: #424242 !important;
+}
+
+.global-listing .category {
+  font-size: 1.2rem;
 }
 
 .article-categories i {
